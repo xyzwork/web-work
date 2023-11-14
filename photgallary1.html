@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            margin-left:25px ;
+            margin-right:25px ;
+            text-align: center;
+            align-items: center;
+            background: rgba(0,0,0,0.7);
+            padding: 25px;
+            border-radius: 25px;
+
+        }
+        .nav h1{
+            background-color: aquamarine;
+            padding: 25px;
+
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            font-size: 28px;
+            color: aliceblue;
+        }
+        li{
+            margin-left: 25px;
+        }
+        .photo-gallary{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            margin-left:100px ;
+            margin-top:100px ;
+            margin-right:25px ;
+            
+        }
+        .pic{
+            height: 230px;
+            overflow: hidden;
+            box-shadow: 0 0 10px 7px rgba(0,0,0,0.7);
+            background: black;
+        }
+        .pic img{
+            height: 100%;
+            width: 100%;
+           
+        }
+        .pic img:hover{
+            transform: scale(1.5);
+            transition: 5s;
+            opacity: 0.5;
+        }
+    </style>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+        <div data-aos="fade-up" class="nav">
+            <h1>PHOTO GALLARY</h1>
+            <ul>
+                <li>All Photos</li>
+                <li>Family Photos</li>
+                <li>Children Photos</li>
+                <li>Outing Photos</li>
+            </ul>
+        </div>
+        <div data-aos="fade-left" class="photo-gallary">
+            <div class="pic Family">
+                <img src="img/istockphoto-1365125616-170667a.webp" alt="">
+            </div>
+            <div class="pic Children">
+                <img src="img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Outing">
+                <img src="img/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Family">
+                <img src="img/istockphoto-1365125616-170667a.webp" alt="">
+            </div>
+            <div class="pic Children">
+                <img src="img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Outing">
+                <img src="img/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Family">
+                <img src="img/istockphoto-1365125616-170667a.webp" alt="">
+            </div>
+            <div class="pic Children">
+                <img src="img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Outing">
+                <img src="img/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Family">
+                <img src="img/istockphoto-1365125616-170667a.webp" alt="">
+            </div>
+            <div class="pic Children">
+                <img src="img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+            </div>
+            <div class="pic Outing">
+                <img src="img/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

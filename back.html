@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+            height: 700px;
+            background-size: cover;
+            filter: blur(5px);
+        }
+        .text{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            right: 30%;
+            transform: translate(-50%-50%);
+            border: solid white;
+            padding: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+        }
+        .btn{
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(46, 130, 169);
+            border: none;
+            border-radius: 50px;
+            color: white;
+        }
+        .btn:hover{
+            background-color: rgb(23, 133, 78);
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="image"></div>
+    <div class="text">
+        <h1>Introduction</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perferendis sapiente magni reprehenderit libero harum quia molestiae perspiciatis laborum aut culpa, nobis iste eius ipsam, ratione ipsum. Magni, consequuntur voluptatem.</p>
+        <button class="btn">SIGN IN</button>
+    </div>
+</body>
+</html>
